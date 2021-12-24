@@ -1,0 +1,2 @@
+obj\Debug/Filter.cs \
+obj\Debug/FilterGrpc.cs: filter.proto
