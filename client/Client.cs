@@ -28,8 +28,10 @@ namespace Client
         public byte[] imageToByteArray(System.Drawing.Image imageIn)
         {
             MemoryStream ms = new MemoryStream();
+            
             imageIn.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
             return ms.ToArray();
+            
         }
 
         public FilterService.FilterServiceClient ConnectServ()
@@ -45,25 +47,20 @@ namespace Client
             return client1;
         }
 
-        public System.Drawing.Image SendgRPC(System.Drawing.Image curImage, int fil, FilterService.FilterServiceClient client)
+        public System.Drawing.Bitmap SendgRPC(System.Drawing.Bitmap curImage, int fil, FilterService.FilterServiceClient client)
         {
-           
-               
                 var data = imageToByteArray(curImage);
                 var reply = client.SendImage(new Filter.Image { Image_ = ByteString.CopyFrom(data), Type =fil });
-                System.Drawing.Image res=null;
+                Bitmap res=null;
 
                 using (var ms = new MemoryStream(reply.FilterImage.ToByteArray()))
                 {
-                    res = System.Drawing.Image.FromStream(ms);
+                    res = new Bitmap(Bitmap.FromStream(ms));
                 }
 
                 if(reply.Success)
-                     MessageBox.Show("Успешно");
-                else
-                    MessageBox.Show("Хуйня");
-            
-            return res;
+                     MessageBox.Show("Успешно");            
+                return res;
 
 
 

@@ -9,8 +9,10 @@ namespace Client
     {
 
         Client client = new Client();
-        System.Drawing.Image curImage;
+        System.Drawing.Bitmap curImage;
         FilterService.FilterServiceClient conn;
+        System.Drawing.Bitmap resImage;
+
 
         public MainForm()
         {
@@ -24,11 +26,9 @@ namespace Client
             openFile.ShowDialog();
             tbFilePath.Text = openFile.FileName;
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.Image = System.Drawing.Image.FromFile(openFile.FileName);
-            curImage = pictureBox1.Image;
+            pictureBox1.Image = new Bitmap(openFile.FileName);
+            curImage = new Bitmap(pictureBox1.Image);
         }
-
-        
 
         private void openFileDialog1_FileOk(object sender, System.ComponentModel.CancelEventArgs e)
         {
@@ -37,10 +37,15 @@ namespace Client
 
         private void butFilter_Click(object sender, EventArgs e)
         {
-            if(rBF1.Checked)
-                pictureBox1.Image=client.SendgRPC(curImage,1, conn);
+            if (rBF1.Checked)
+            {
+                resImage= client.SendgRPC(curImage, 1, conn);
+                pictureBox1.Image = resImage;
+            }
             else
-                pictureBox1.Image=client.SendgRPC(curImage, 2, conn);
+            {   resImage= client.SendgRPC(curImage, 2, conn);
+                pictureBox1.Image = resImage;
+            }
         }
 
         private void butConServ_Click(object sender, EventArgs e)
@@ -63,6 +68,20 @@ namespace Client
         private void butDef_Click(object sender, EventArgs e)
         {
             pictureBox1.Image = curImage;
+        }
+
+        private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            if(conn!=null)
+            conn.DecreaseCountClients(new DecreaseRequest());
+        }
+
+        private void butSave_Click(object sender, EventArgs e)
+        {
+            saveFile.Filter = @"Jpg picture files (*.jpg)|*.jpg";
+            saveFile.ShowDialog();
+            pictureBox1.Image.Save(saveFile.FileName, System.Drawing.Imaging.ImageFormat.Jpeg);
+            MessageBox.Show("Сохранено успешно!");
         }
     }
 }

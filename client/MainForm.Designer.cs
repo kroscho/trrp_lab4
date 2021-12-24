@@ -39,6 +39,8 @@ namespace Client
             this.rBF2 = new System.Windows.Forms.RadioButton();
             this.butConServ = new System.Windows.Forms.Button();
             this.butDef = new System.Windows.Forms.Button();
+            this.saveFile = new System.Windows.Forms.SaveFileDialog();
+            this.butSave = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,7 +105,7 @@ namespace Client
             // 
             this.rBF1.AutoSize = true;
             this.rBF1.Checked = true;
-            this.rBF1.Location = new System.Drawing.Point(539, 593);
+            this.rBF1.Location = new System.Drawing.Point(475, 591);
             this.rBF1.Name = "rBF1";
             this.rBF1.Size = new System.Drawing.Size(88, 21);
             this.rBF1.TabIndex = 16;
@@ -115,7 +117,7 @@ namespace Client
             // rBF2
             // 
             this.rBF2.AutoSize = true;
-            this.rBF2.Location = new System.Drawing.Point(643, 591);
+            this.rBF2.Location = new System.Drawing.Point(569, 592);
             this.rBF2.Name = "rBF2";
             this.rBF2.Size = new System.Drawing.Size(88, 21);
             this.rBF2.TabIndex = 17;
@@ -138,18 +140,30 @@ namespace Client
             this.butDef.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.butDef.Location = new System.Drawing.Point(226, 585);
             this.butDef.Name = "butDef";
-            this.butDef.Size = new System.Drawing.Size(208, 29);
+            this.butDef.Size = new System.Drawing.Size(219, 30);
             this.butDef.TabIndex = 19;
             this.butDef.Text = "Вернуть исходное";
             this.butDef.UseVisualStyleBackColor = true;
             this.butDef.Visible = false;
             this.butDef.Click += new System.EventHandler(this.butDef_Click);
             // 
+            // butSave
+            // 
+            this.butSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.butSave.Location = new System.Drawing.Point(796, 586);
+            this.butSave.Name = "butSave";
+            this.butSave.Size = new System.Drawing.Size(195, 33);
+            this.butSave.TabIndex = 20;
+            this.butSave.Text = "Сохранить как...";
+            this.butSave.UseVisualStyleBackColor = true;
+            this.butSave.Click += new System.EventHandler(this.butSave_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 627);
+            this.Controls.Add(this.butSave);
             this.Controls.Add(this.butDef);
             this.Controls.Add(this.butConServ);
             this.Controls.Add(this.rBF2);
@@ -161,6 +175,7 @@ namespace Client
             this.Controls.Add(this.label1);
             this.Name = "MainForm";
             this.Text = "Клиент";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -179,6 +194,8 @@ namespace Client
         private System.Windows.Forms.RadioButton rBF2;
         private System.Windows.Forms.Button butConServ;
         private System.Windows.Forms.Button butDef;
+        private System.Windows.Forms.SaveFileDialog saveFile;
+        private System.Windows.Forms.Button butSave;
     }
 }
 
