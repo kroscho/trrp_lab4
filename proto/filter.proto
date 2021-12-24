@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package filter;
+
+// проверка доступности сервера
+message ConnectRequest {
+    int64 filterPort = 1;
+}
+message ConnectResponse {}
+
+message TestMessage{
+    string test = 1;
+}
+message TestMessageResponse{
+    string text = 1;
+}
+
+// уменьшение кол-ва клиентов на этом сервере
+message DecreaseRequest {}
+message DecreaseResponse {}
+
+// увеличение кол-ва клиентов на этом сервере
+message IncreaseRequest {}
+message IncreaseResponse {}
+
+// сервис по работе с сервером обработки
+service FilterService {
+    rpc GetTestMessage(TestMessage) returns (TestMessageResponse) {}
+    rpc Connect(ConnectRequest) returns (ConnectResponse) {}
+    rpc DecreaseCountClients(DecreaseRequest) returns (DecreaseResponse) {}
+    rpc IncreaseCountClients(IncreaseRequest) returns (IncreaseResponse) {}
+}

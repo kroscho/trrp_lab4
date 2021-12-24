@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package filter;
+
+// получение свободного сервера
+message FilterServerRequest {}
+
+message FilterServer {
+    string address = 1;
+}
+
+// добавление нового сервера обработки
+message AddFilterServerRequest {
+    FilterServer filterServer = 1;
+    string secretKey = 2;
+}
+
+message AddFilterServerResponse {}
+
+// сервис по работе со множеством серверов
+service DispatcherService {
+    // получение сервера по ид документа
+    rpc GetFilterServer(FilterServerRequest) returns (FilterServer) {}
+
+    // добавление нового сервера обработки
+    rpc AddFilterServer(AddFilterServerRequest) returns (AddFilterServerResponse) {}
+}
