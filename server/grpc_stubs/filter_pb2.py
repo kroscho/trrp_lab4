@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0c\x66ilter.proto\x12\x06\x66ilter\"$\n\x0e\x43onnectRequest\x12\x12\n\nfilterPort\x18\x01 \x01(\x03\"\x11\n\x0f\x43onnectResponse\"$\n\x05Image\x12\r\n\x05image\x18\x01 \x01(\x0c\x12\x0c\n\x04type\x18\x02 \x01(\x03\"6\n\rImageResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x14\n\x0c\x66ilter_image\x18\x02 \x01(\x0c\"\x11\n\x0f\x44\x65\x63reaseRequest\"\x12\n\x10\x44\x65\x63reaseResponse\"\x11\n\x0fIncreaseRequest\"\x12\n\x10IncreaseResponse2\x9c\x02\n\rFilterService\x12\x33\n\tSendImage\x12\r.filter.Image\x1a\x15.filter.ImageResponse\"\x00\x12<\n\x07\x43onnect\x12\x16.filter.ConnectRequest\x1a\x17.filter.ConnectResponse\"\x00\x12K\n\x14\x44\x65\x63reaseCountClients\x12\x17.filter.DecreaseRequest\x1a\x18.filter.DecreaseResponse\"\x00\x12K\n\x14IncreaseCountClients\x12\x17.filter.IncreaseRequest\x1a\x18.filter.IncreaseResponse\"\x00\x62\x06proto3'
+  serialized_pb=b'\n\x0c\x66ilter.proto\x12\x06\x66ilter\"$\n\x0e\x43onnectRequest\x12\x12\n\nfilterPort\x18\x01 \x01(\x03\" \n\x0f\x43onnectResponse\x12\r\n\x05\x65rror\x18\x01 \x01(\x03\"$\n\x05Image\x12\r\n\x05image\x18\x01 \x01(\x0c\x12\x0c\n\x04type\x18\x02 \x01(\x03\"6\n\rImageResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x14\n\x0c\x66ilter_image\x18\x02 \x01(\x0c\"\x11\n\x0f\x44\x65\x63reaseRequest\"\x12\n\x10\x44\x65\x63reaseResponse\"\x11\n\x0fIncreaseRequest\"\x12\n\x10IncreaseResponse2\x9c\x02\n\rFilterService\x12\x33\n\tSendImage\x12\r.filter.Image\x1a\x15.filter.ImageResponse\"\x00\x12<\n\x07\x43onnect\x12\x16.filter.ConnectRequest\x1a\x17.filter.ConnectResponse\"\x00\x12K\n\x14\x44\x65\x63reaseCountClients\x12\x17.filter.DecreaseRequest\x1a\x18.filter.DecreaseResponse\"\x00\x12K\n\x14IncreaseCountClients\x12\x17.filter.IncreaseRequest\x1a\x18.filter.IncreaseResponse\"\x00\x62\x06proto3'
 )
 
 
@@ -65,6 +65,13 @@ _CONNECTRESPONSE = _descriptor.Descriptor(
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
+    _descriptor.FieldDescriptor(
+      name='error', full_name='filter.ConnectResponse.error', index=0,
+      number=1, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -78,7 +85,7 @@ _CONNECTRESPONSE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=62,
-  serialized_end=79,
+  serialized_end=94,
 )
 
 
@@ -116,8 +123,8 @@ _IMAGE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=81,
-  serialized_end=117,
+  serialized_start=96,
+  serialized_end=132,
 )
 
 
@@ -155,8 +162,8 @@ _IMAGERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=119,
-  serialized_end=173,
+  serialized_start=134,
+  serialized_end=188,
 )
 
 
@@ -180,8 +187,8 @@ _DECREASEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=175,
-  serialized_end=192,
+  serialized_start=190,
+  serialized_end=207,
 )
 
 
@@ -205,8 +212,8 @@ _DECREASERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=194,
-  serialized_end=212,
+  serialized_start=209,
+  serialized_end=227,
 )
 
 
@@ -230,8 +237,8 @@ _INCREASEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=214,
-  serialized_end=231,
+  serialized_start=229,
+  serialized_end=246,
 )
 
 
@@ -255,8 +262,8 @@ _INCREASERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=233,
-  serialized_end=251,
+  serialized_start=248,
+  serialized_end=266,
 )
 
 DESCRIPTOR.message_types_by_name['ConnectRequest'] = _CONNECTREQUEST
@@ -334,8 +341,8 @@ _FILTERSERVICE = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=254,
-  serialized_end=538,
+  serialized_start=269,
+  serialized_end=553,
   methods=[
   _descriptor.MethodDescriptor(
     name='SendImage',

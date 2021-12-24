@@ -1,12 +1,14 @@
 from concurrent import futures
 import grpc
 import sys, os
+import time
 
 path_dir = (os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 print(path_dir)
 sys.path.append(path_dir)
 
 from config import config
+from errors.typeErrors import TypeError
 
 path_dir = (os.path.abspath(os.path.join(os.path.dirname(__file__), '../filter')))
 print(path_dir)
@@ -26,17 +28,15 @@ from filter_pb2 import ConnectRequest, IncreaseRequest, DecreaseRequest
 class DispatcherService(dispatcher_pb2_grpc.DispatcherServiceServicer):
 
     def __init__(self):
-        self.filter_servers = []
+        self.filter_servers = ["192.168.0.100:62175"]
 
     def GetFilterServer(self, request, context):
         server_address = ""
-
+        start_time = time.time()
         while server_address == "":
             # если серверы не найдены
             if not self.filter_servers:
-                context.set_code(grpc.StatusCode.NOT_FOUND)
-                context.set_details("Серверы не найдены!")
-                return FilterServer(address=server_address)
+                return FilterServer(address=server_address, error=TypeError.NotFoundServers.value)
 
             for server_addr in self.filter_servers:
                 print("server_addr: ", server_addr)
@@ -44,13 +44,21 @@ class DispatcherService(dispatcher_pb2_grpc.DispatcherServiceServicer):
                 channel = grpc.insecure_channel(server_addr)
                 stub = filter_pb2_grpc.FilterServiceStub(channel)
                 try:
-                    stub.Connect(ConnectRequest(filterPort=0))
+                    response = stub.Connect(ConnectRequest(filterPort=0))
+                except:
+                    self.filter_servers.remove(server_addr)
+                    server_address = ""
+                    if not self.filter_servers:
+                        return FilterServer(address=server_address, error=TypeError.NotFoundServers.value)
+                    continue
+                if response.error == TypeError.Success.value:
                     stub.IncreaseCountClients(IncreaseRequest())
                     break
-                except grpc.RpcError as e:
-                    #stub.DecreaseCountClients(DecreaseRequest())
+                else:
                     server_address = ""
-        return FilterServer(address=server_address)
+                if (time.time() - start_time > 30):
+                    return FilterServer(address=server_address, error=TypeError.WaitingTime.value)            
+        return FilterServer(address=server_address, error=TypeError.Success.value)
 
     def AddFilterServer(self, request, context):
         self.filter_servers.append(request.filterServer.address)
@@ -61,7 +69,7 @@ def serve():
     dispatcher_pb2_grpc.add_DispatcherServiceServicer_to_server(DispatcherService(), server)
     server.add_insecure_port(config['dispatcher_address'])
     server.start()
-    print("dispatcher started at {}".format(config['dispatcher_address']))
+    print("Диспетчер начал работу по адресу: {}".format(config['dispatcher_address']))
     server.wait_for_termination()
 
 if __name__ == "__main__":

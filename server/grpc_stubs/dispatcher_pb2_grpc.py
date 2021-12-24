@@ -32,7 +32,7 @@ class DispatcherServiceServicer(object):
     """
 
     def GetFilterServer(self, request, context):
-        """получение сервера по ид документа
+        """получение сервера
         """
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')

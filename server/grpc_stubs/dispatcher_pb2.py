@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x10\x64ispatcher.proto\x12\x06\x66ilter\"\x15\n\x13\x46ilterServerRequest\"\x1f\n\x0c\x46ilterServer\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t\"W\n\x16\x41\x64\x64\x46ilterServerRequest\x12*\n\x0c\x66ilterServer\x18\x01 \x01(\x0b\x32\x14.filter.FilterServer\x12\x11\n\tsecretKey\x18\x02 \x01(\t\"\x19\n\x17\x41\x64\x64\x46ilterServerResponse2\xb1\x01\n\x11\x44ispatcherService\x12\x46\n\x0fGetFilterServer\x12\x1b.filter.FilterServerRequest\x1a\x14.filter.FilterServer\"\x00\x12T\n\x0f\x41\x64\x64\x46ilterServer\x12\x1e.filter.AddFilterServerRequest\x1a\x1f.filter.AddFilterServerResponse\"\x00\x62\x06proto3'
+  serialized_pb=b'\n\x10\x64ispatcher.proto\x12\x06\x66ilter\"\x15\n\x13\x46ilterServerRequest\".\n\x0c\x46ilterServer\x12\x0f\n\x07\x61\x64\x64ress\x18\x01 \x01(\t\x12\r\n\x05\x65rror\x18\x02 \x01(\x03\"W\n\x16\x41\x64\x64\x46ilterServerRequest\x12*\n\x0c\x66ilterServer\x18\x01 \x01(\x0b\x32\x14.filter.FilterServer\x12\x11\n\tsecretKey\x18\x02 \x01(\t\"\x19\n\x17\x41\x64\x64\x46ilterServerResponse2\xb1\x01\n\x11\x44ispatcherService\x12\x46\n\x0fGetFilterServer\x12\x1b.filter.FilterServerRequest\x1a\x14.filter.FilterServer\"\x00\x12T\n\x0f\x41\x64\x64\x46ilterServer\x12\x1e.filter.AddFilterServerRequest\x1a\x1f.filter.AddFilterServerResponse\"\x00\x62\x06proto3'
 )
 
 
@@ -65,6 +65,13 @@ _FILTERSERVER = _descriptor.Descriptor(
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='error', full_name='filter.FilterServer.error', index=1,
+      number=2, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
   ],
   extensions=[
   ],
@@ -78,7 +85,7 @@ _FILTERSERVER = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=51,
-  serialized_end=82,
+  serialized_end=97,
 )
 
 
@@ -116,8 +123,8 @@ _ADDFILTERSERVERREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=84,
-  serialized_end=171,
+  serialized_start=99,
+  serialized_end=186,
 )
 
 
@@ -141,8 +148,8 @@ _ADDFILTERSERVERRESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=173,
-  serialized_end=198,
+  serialized_start=188,
+  serialized_end=213,
 )
 
 _ADDFILTERSERVERREQUEST.fields_by_name['filterServer'].message_type = _FILTERSERVER
@@ -189,8 +196,8 @@ _DISPATCHERSERVICE = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=201,
-  serialized_end=378,
+  serialized_start=216,
+  serialized_end=393,
   methods=[
   _descriptor.MethodDescriptor(
     name='GetFilterServer',

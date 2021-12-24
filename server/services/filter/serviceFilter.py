@@ -12,7 +12,7 @@ class FilterImage():
         self.typeFilter = typeFilter
         self.image = self.getImageFromBytes(imageBytes)
 
-    def getImageFromBytes(image_bytes):
+    def getImageFromBytes(self, image_bytes):
         nparr = np.frombuffer(image_bytes, np.uint8)
         img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
         return img
@@ -20,10 +20,10 @@ class FilterImage():
 
     def applyFilter(self):
         if self.typeFilter == TypeFilter.Mean:
-            result_img = self.meanFilter()
+            return self.meanFilter()
         elif self.typeFilter == TypeFilter.Gauss:
-            result_img = self.gaussFilter()
-        return result_img
+            return self.gaussFilter()
+        return self.meanFilter()
 
     def meanFilter(self):
         img = cv2.cvtColor(self.image, cv2.COLOR_BGR2HSV) # convert to HSV
@@ -33,4 +33,8 @@ class FilterImage():
         return result_image
 
     def gaussFilter(self):
-        pass
+        img = cv2.cvtColor(self.image, cv2.COLOR_BGR2HSV) # convert to HSV
+        figure_size = 9 # the dimension of the x and y axis of the kernal.
+        new_image = cv2.GaussianBlur(img, (figure_size, figure_size),0)
+        result_image = cv2.imencode('.jpg', new_image)[1].tobytes()
+        return result_image

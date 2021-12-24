@@ -6,7 +6,9 @@ package filter;
 message ConnectRequest {
     int64 filterPort = 1;
 }
-message ConnectResponse {}
+message ConnectResponse {
+    int64 error = 1;
+}
 
 message Image{
     bytes image = 1;
