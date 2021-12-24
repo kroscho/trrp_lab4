@@ -15,10 +15,10 @@ class FilterServiceStub(object):
         Args:
             channel: A grpc.Channel.
         """
-        self.GetTestMessage = channel.unary_unary(
-                '/filter.FilterService/GetTestMessage',
-                request_serializer=filter__pb2.TestMessage.SerializeToString,
-                response_deserializer=filter__pb2.TestMessageResponse.FromString,
+        self.SendImage = channel.unary_unary(
+                '/filter.FilterService/SendImage',
+                request_serializer=filter__pb2.Image.SerializeToString,
+                response_deserializer=filter__pb2.ImageResponse.FromString,
                 )
         self.Connect = channel.unary_unary(
                 '/filter.FilterService/Connect',
@@ -41,7 +41,7 @@ class FilterServiceServicer(object):
     """сервис по работе с сервером обработки
     """
 
-    def GetTestMessage(self, request, context):
+    def SendImage(self, request, context):
         """Missing associated documentation comment in .proto file."""
         context.set_code(grpc.StatusCode.UNIMPLEMENTED)
         context.set_details('Method not implemented!')
@@ -68,10 +68,10 @@ class FilterServiceServicer(object):
 
 def add_FilterServiceServicer_to_server(servicer, server):
     rpc_method_handlers = {
-            'GetTestMessage': grpc.unary_unary_rpc_method_handler(
-                    servicer.GetTestMessage,
-                    request_deserializer=filter__pb2.TestMessage.FromString,
-                    response_serializer=filter__pb2.TestMessageResponse.SerializeToString,
+            'SendImage': grpc.unary_unary_rpc_method_handler(
+                    servicer.SendImage,
+                    request_deserializer=filter__pb2.Image.FromString,
+                    response_serializer=filter__pb2.ImageResponse.SerializeToString,
             ),
             'Connect': grpc.unary_unary_rpc_method_handler(
                     servicer.Connect,
@@ -100,7 +100,7 @@ class FilterService(object):
     """
 
     @staticmethod
-    def GetTestMessage(request,
+    def SendImage(request,
             target,
             options=(),
             channel_credentials=None,
@@ -110,9 +110,9 @@ class FilterService(object):
             wait_for_ready=None,
             timeout=None,
             metadata=None):
-        return grpc.experimental.unary_unary(request, target, '/filter.FilterService/GetTestMessage',
-            filter__pb2.TestMessage.SerializeToString,
-            filter__pb2.TestMessageResponse.FromString,
+        return grpc.experimental.unary_unary(request, target, '/filter.FilterService/SendImage',
+            filter__pb2.Image.SerializeToString,
+            filter__pb2.ImageResponse.FromString,
             options, channel_credentials,
             insecure, call_credentials, compression, wait_for_ready, timeout, metadata)
 

@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto3',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\x0c\x66ilter.proto\x12\x06\x66ilter\"$\n\x0e\x43onnectRequest\x12\x12\n\nfilterPort\x18\x01 \x01(\x03\"\x11\n\x0f\x43onnectResponse\"\x1b\n\x0bTestMessage\x12\x0c\n\x04test\x18\x01 \x01(\t\"#\n\x13TestMessageResponse\x12\x0c\n\x04text\x18\x01 \x01(\t\"\x11\n\x0f\x44\x65\x63reaseRequest\"\x12\n\x10\x44\x65\x63reaseResponse\"\x11\n\x0fIncreaseRequest\"\x12\n\x10IncreaseResponse2\xad\x02\n\rFilterService\x12\x44\n\x0eGetTestMessage\x12\x13.filter.TestMessage\x1a\x1b.filter.TestMessageResponse\"\x00\x12<\n\x07\x43onnect\x12\x16.filter.ConnectRequest\x1a\x17.filter.ConnectResponse\"\x00\x12K\n\x14\x44\x65\x63reaseCountClients\x12\x17.filter.DecreaseRequest\x1a\x18.filter.DecreaseResponse\"\x00\x12K\n\x14IncreaseCountClients\x12\x17.filter.IncreaseRequest\x1a\x18.filter.IncreaseResponse\"\x00\x62\x06proto3'
+  serialized_pb=b'\n\x0c\x66ilter.proto\x12\x06\x66ilter\"$\n\x0e\x43onnectRequest\x12\x12\n\nfilterPort\x18\x01 \x01(\x03\"\x11\n\x0f\x43onnectResponse\"$\n\x05Image\x12\r\n\x05image\x18\x01 \x01(\x0c\x12\x0c\n\x04type\x18\x02 \x01(\x03\"6\n\rImageResponse\x12\x0f\n\x07success\x18\x01 \x01(\x08\x12\x14\n\x0c\x66ilter_image\x18\x02 \x01(\x0c\"\x11\n\x0f\x44\x65\x63reaseRequest\"\x12\n\x10\x44\x65\x63reaseResponse\"\x11\n\x0fIncreaseRequest\"\x12\n\x10IncreaseResponse2\x9c\x02\n\rFilterService\x12\x33\n\tSendImage\x12\r.filter.Image\x1a\x15.filter.ImageResponse\"\x00\x12<\n\x07\x43onnect\x12\x16.filter.ConnectRequest\x1a\x17.filter.ConnectResponse\"\x00\x12K\n\x14\x44\x65\x63reaseCountClients\x12\x17.filter.DecreaseRequest\x1a\x18.filter.DecreaseResponse\"\x00\x12K\n\x14IncreaseCountClients\x12\x17.filter.IncreaseRequest\x1a\x18.filter.IncreaseResponse\"\x00\x62\x06proto3'
 )
 
 
@@ -82,18 +82,25 @@ _CONNECTRESPONSE = _descriptor.Descriptor(
 )
 
 
-_TESTMESSAGE = _descriptor.Descriptor(
-  name='TestMessage',
-  full_name='filter.TestMessage',
+_IMAGE = _descriptor.Descriptor(
+  name='Image',
+  full_name='filter.Image',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='test', full_name='filter.TestMessage.test', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
+      name='image', full_name='filter.Image.image', index=0,
+      number=1, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='type', full_name='filter.Image.type', index=1,
+      number=2, type=3, cpp_type=2, label=1,
+      has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -110,22 +117,29 @@ _TESTMESSAGE = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=81,
-  serialized_end=108,
+  serialized_end=117,
 )
 
 
-_TESTMESSAGERESPONSE = _descriptor.Descriptor(
-  name='TestMessageResponse',
-  full_name='filter.TestMessageResponse',
+_IMAGERESPONSE = _descriptor.Descriptor(
+  name='ImageResponse',
+  full_name='filter.ImageResponse',
   filename=None,
   file=DESCRIPTOR,
   containing_type=None,
   create_key=_descriptor._internal_create_key,
   fields=[
     _descriptor.FieldDescriptor(
-      name='text', full_name='filter.TestMessageResponse.text', index=0,
-      number=1, type=9, cpp_type=9, label=1,
-      has_default_value=False, default_value=b"".decode('utf-8'),
+      name='success', full_name='filter.ImageResponse.success', index=0,
+      number=1, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
+    _descriptor.FieldDescriptor(
+      name='filter_image', full_name='filter.ImageResponse.filter_image', index=1,
+      number=2, type=12, cpp_type=9, label=1,
+      has_default_value=False, default_value=b"",
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
       serialized_options=None, file=DESCRIPTOR,  create_key=_descriptor._internal_create_key),
@@ -141,8 +155,8 @@ _TESTMESSAGERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=110,
-  serialized_end=145,
+  serialized_start=119,
+  serialized_end=173,
 )
 
 
@@ -166,8 +180,8 @@ _DECREASEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=147,
-  serialized_end=164,
+  serialized_start=175,
+  serialized_end=192,
 )
 
 
@@ -191,8 +205,8 @@ _DECREASERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=166,
-  serialized_end=184,
+  serialized_start=194,
+  serialized_end=212,
 )
 
 
@@ -216,8 +230,8 @@ _INCREASEREQUEST = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=186,
-  serialized_end=203,
+  serialized_start=214,
+  serialized_end=231,
 )
 
 
@@ -241,14 +255,14 @@ _INCREASERESPONSE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=205,
-  serialized_end=223,
+  serialized_start=233,
+  serialized_end=251,
 )
 
 DESCRIPTOR.message_types_by_name['ConnectRequest'] = _CONNECTREQUEST
 DESCRIPTOR.message_types_by_name['ConnectResponse'] = _CONNECTRESPONSE
-DESCRIPTOR.message_types_by_name['TestMessage'] = _TESTMESSAGE
-DESCRIPTOR.message_types_by_name['TestMessageResponse'] = _TESTMESSAGERESPONSE
+DESCRIPTOR.message_types_by_name['Image'] = _IMAGE
+DESCRIPTOR.message_types_by_name['ImageResponse'] = _IMAGERESPONSE
 DESCRIPTOR.message_types_by_name['DecreaseRequest'] = _DECREASEREQUEST
 DESCRIPTOR.message_types_by_name['DecreaseResponse'] = _DECREASERESPONSE
 DESCRIPTOR.message_types_by_name['IncreaseRequest'] = _INCREASEREQUEST
@@ -269,19 +283,19 @@ ConnectResponse = _reflection.GeneratedProtocolMessageType('ConnectResponse', (_
   })
 _sym_db.RegisterMessage(ConnectResponse)
 
-TestMessage = _reflection.GeneratedProtocolMessageType('TestMessage', (_message.Message,), {
-  'DESCRIPTOR' : _TESTMESSAGE,
+Image = _reflection.GeneratedProtocolMessageType('Image', (_message.Message,), {
+  'DESCRIPTOR' : _IMAGE,
   '__module__' : 'filter_pb2'
-  # @@protoc_insertion_point(class_scope:filter.TestMessage)
+  # @@protoc_insertion_point(class_scope:filter.Image)
   })
-_sym_db.RegisterMessage(TestMessage)
+_sym_db.RegisterMessage(Image)
 
-TestMessageResponse = _reflection.GeneratedProtocolMessageType('TestMessageResponse', (_message.Message,), {
-  'DESCRIPTOR' : _TESTMESSAGERESPONSE,
+ImageResponse = _reflection.GeneratedProtocolMessageType('ImageResponse', (_message.Message,), {
+  'DESCRIPTOR' : _IMAGERESPONSE,
   '__module__' : 'filter_pb2'
-  # @@protoc_insertion_point(class_scope:filter.TestMessageResponse)
+  # @@protoc_insertion_point(class_scope:filter.ImageResponse)
   })
-_sym_db.RegisterMessage(TestMessageResponse)
+_sym_db.RegisterMessage(ImageResponse)
 
 DecreaseRequest = _reflection.GeneratedProtocolMessageType('DecreaseRequest', (_message.Message,), {
   'DESCRIPTOR' : _DECREASEREQUEST,
@@ -320,16 +334,16 @@ _FILTERSERVICE = _descriptor.ServiceDescriptor(
   index=0,
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_start=226,
-  serialized_end=527,
+  serialized_start=254,
+  serialized_end=538,
   methods=[
   _descriptor.MethodDescriptor(
-    name='GetTestMessage',
-    full_name='filter.FilterService.GetTestMessage',
+    name='SendImage',
+    full_name='filter.FilterService.SendImage',
     index=0,
     containing_service=None,
-    input_type=_TESTMESSAGE,
-    output_type=_TESTMESSAGERESPONSE,
+    input_type=_IMAGE,
+    output_type=_IMAGERESPONSE,
     serialized_options=None,
     create_key=_descriptor._internal_create_key,
   ),

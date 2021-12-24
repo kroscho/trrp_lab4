@@ -11,16 +11,11 @@ img_str = cv2.imencode('.jpg', image)[1].tobytes()
 
 nparr = np.frombuffer(img_str, np.uint8)
 img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
-isWritten = cv2.imwrite('image-2.png', img)
-img = cv2.cvtColor(image, cv2.COLOR_BGR2HSV) # convert to HSV
+
+img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) # convert to HSV
 figure_size = 9 # the dimension of the x and y axis of the kernal.
 new_image = cv2.blur(img ,(figure_size, figure_size))
-
-
-
-if isWritten:
-	print('Image is successfully saved as file.')
-
+cv2.imwrite('image-2.png', new_image)
 
 plt.figure(figsize=(11,6))
 plt.subplot(121), plt.imshow(cv2.cvtColor(img, cv2.COLOR_HSV2RGB)),plt.title('Original')

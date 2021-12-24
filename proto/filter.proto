@@ -8,11 +8,13 @@ message ConnectRequest {
 }
 message ConnectResponse {}
 
-message TestMessage{
-    string test = 1;
+message Image{
+    bytes image = 1;
+    int64 type = 2;
 }
-message TestMessageResponse{
-    string text = 1;
+message ImageResponse{
+    bool success = 1;
+    bytes filter_image = 2;
 }
 
 // уменьшение кол-ва клиентов на этом сервере
@@ -25,7 +27,7 @@ message IncreaseResponse {}
 
 // сервис по работе с сервером обработки
 service FilterService {
-    rpc GetTestMessage(TestMessage) returns (TestMessageResponse) {}
+    rpc SendImage(Image) returns (ImageResponse) {}
     rpc Connect(ConnectRequest) returns (ConnectResponse) {}
     rpc DecreaseCountClients(DecreaseRequest) returns (DecreaseResponse) {}
     rpc IncreaseCountClients(IncreaseRequest) returns (IncreaseResponse) {}
