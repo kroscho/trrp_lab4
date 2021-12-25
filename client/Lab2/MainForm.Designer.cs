@@ -41,7 +41,10 @@ namespace Client
             this.butDef = new System.Windows.Forms.Button();
             this.saveFile = new System.Windows.Forms.SaveFileDialog();
             this.butSave = new System.Windows.Forms.Button();
+            this.rBF3 = new System.Windows.Forms.RadioButton();
+            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -105,25 +108,27 @@ namespace Client
             // 
             this.rBF1.AutoSize = true;
             this.rBF1.Checked = true;
-            this.rBF1.Location = new System.Drawing.Point(475, 591);
+            this.rBF1.Location = new System.Drawing.Point(451, 590);
             this.rBF1.Name = "rBF1";
-            this.rBF1.Size = new System.Drawing.Size(88, 21);
+            this.rBF1.Size = new System.Drawing.Size(86, 21);
             this.rBF1.TabIndex = 16;
             this.rBF1.TabStop = true;
-            this.rBF1.Text = "Фильтр1";
+            this.rBF1.Text = "Средний";
             this.rBF1.UseVisualStyleBackColor = true;
             this.rBF1.Visible = false;
+            this.rBF1.CheckedChanged += new System.EventHandler(this.rBF1_CheckedChanged);
             // 
             // rBF2
             // 
             this.rBF2.AutoSize = true;
-            this.rBF2.Location = new System.Drawing.Point(569, 592);
+            this.rBF2.Location = new System.Drawing.Point(557, 590);
             this.rBF2.Name = "rBF2";
-            this.rBF2.Size = new System.Drawing.Size(88, 21);
+            this.rBF2.Size = new System.Drawing.Size(66, 21);
             this.rBF2.TabIndex = 17;
-            this.rBF2.Text = "Фильтр2";
+            this.rBF2.Text = "Гаусс";
             this.rBF2.UseVisualStyleBackColor = true;
             this.rBF2.Visible = false;
+            this.rBF2.CheckedChanged += new System.EventHandler(this.rBF2_CheckedChanged);
             // 
             // butConServ
             // 
@@ -150,7 +155,7 @@ namespace Client
             // butSave
             // 
             this.butSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.butSave.Location = new System.Drawing.Point(796, 586);
+            this.butSave.Location = new System.Drawing.Point(807, 586);
             this.butSave.Name = "butSave";
             this.butSave.Size = new System.Drawing.Size(195, 33);
             this.butSave.TabIndex = 20;
@@ -159,11 +164,43 @@ namespace Client
             this.butSave.Visible = false;
             this.butSave.Click += new System.EventHandler(this.butSave_Click);
             // 
+            // rBF3
+            // 
+            this.rBF3.AutoSize = true;
+            this.rBF3.Location = new System.Drawing.Point(644, 590);
+            this.rBF3.Name = "rBF3";
+            this.rBF3.Size = new System.Drawing.Size(48, 21);
+            this.rBF3.TabIndex = 21;
+            this.rBF3.Text = "ЧБ";
+            this.rBF3.UseVisualStyleBackColor = true;
+            this.rBF3.Visible = false;
+            this.rBF3.CheckedChanged += new System.EventHandler(this.rBF3_CheckedChanged);
+            // 
+            // numericUpDown1
+            // 
+            this.numericUpDown1.Location = new System.Drawing.Point(710, 593);
+            this.numericUpDown1.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Name = "numericUpDown1";
+            this.numericUpDown1.Size = new System.Drawing.Size(59, 22);
+            this.numericUpDown1.TabIndex = 22;
+            this.numericUpDown1.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.numericUpDown1.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1024, 627);
+            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.rBF3);
             this.Controls.Add(this.butSave);
             this.Controls.Add(this.butDef);
             this.Controls.Add(this.butConServ);
@@ -178,6 +215,7 @@ namespace Client
             this.Text = "Клиент";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -197,6 +235,8 @@ namespace Client
         private System.Windows.Forms.Button butDef;
         private System.Windows.Forms.SaveFileDialog saveFile;
         private System.Windows.Forms.Button butSave;
+        private System.Windows.Forms.RadioButton rBF3;
+        private System.Windows.Forms.NumericUpDown numericUpDown1;
     }
 }
 

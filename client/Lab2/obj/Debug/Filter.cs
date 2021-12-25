@@ -25,24 +25,24 @@ namespace Filter {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "CgxmaWx0ZXIucHJvdG8SBmZpbHRlciIkCg5Db25uZWN0UmVxdWVzdBISCgpm",
-            "aWx0ZXJQb3J0GAEgASgDIhEKD0Nvbm5lY3RSZXNwb25zZSIkCgVJbWFnZRIN",
-            "CgVpbWFnZRgBIAEoDBIMCgR0eXBlGAIgASgDIjYKDUltYWdlUmVzcG9uc2US",
-            "DwoHc3VjY2VzcxgBIAEoCBIUCgxmaWx0ZXJfaW1hZ2UYAiABKAwiEQoPRGVj",
-            "cmVhc2VSZXF1ZXN0IhIKEERlY3JlYXNlUmVzcG9uc2UiEQoPSW5jcmVhc2VS",
-            "ZXF1ZXN0IhIKEEluY3JlYXNlUmVzcG9uc2UynAIKDUZpbHRlclNlcnZpY2US",
-            "MwoJU2VuZEltYWdlEg0uZmlsdGVyLkltYWdlGhUuZmlsdGVyLkltYWdlUmVz",
-            "cG9uc2UiABI8CgdDb25uZWN0EhYuZmlsdGVyLkNvbm5lY3RSZXF1ZXN0Ghcu",
-            "ZmlsdGVyLkNvbm5lY3RSZXNwb25zZSIAEksKFERlY3JlYXNlQ291bnRDbGll",
-            "bnRzEhcuZmlsdGVyLkRlY3JlYXNlUmVxdWVzdBoYLmZpbHRlci5EZWNyZWFz",
-            "ZVJlc3BvbnNlIgASSwoUSW5jcmVhc2VDb3VudENsaWVudHMSFy5maWx0ZXIu",
-            "SW5jcmVhc2VSZXF1ZXN0GhguZmlsdGVyLkluY3JlYXNlUmVzcG9uc2UiAGIG",
-            "cHJvdG8z"));
+            "aWx0ZXJQb3J0GAEgASgDIiAKD0Nvbm5lY3RSZXNwb25zZRINCgVlcnJvchgB",
+            "IAEoAyI0CgVJbWFnZRINCgVpbWFnZRgBIAEoDBIMCgR0eXBlGAIgASgDEg4K",
+            "Bmtlcm5lbBgDIAEoAyI2Cg1JbWFnZVJlc3BvbnNlEg8KB3N1Y2Nlc3MYASAB",
+            "KAgSFAoMZmlsdGVyX2ltYWdlGAIgASgMIhEKD0RlY3JlYXNlUmVxdWVzdCIS",
+            "ChBEZWNyZWFzZVJlc3BvbnNlIhEKD0luY3JlYXNlUmVxdWVzdCISChBJbmNy",
+            "ZWFzZVJlc3BvbnNlMpwCCg1GaWx0ZXJTZXJ2aWNlEjMKCVNlbmRJbWFnZRIN",
+            "LmZpbHRlci5JbWFnZRoVLmZpbHRlci5JbWFnZVJlc3BvbnNlIgASPAoHQ29u",
+            "bmVjdBIWLmZpbHRlci5Db25uZWN0UmVxdWVzdBoXLmZpbHRlci5Db25uZWN0",
+            "UmVzcG9uc2UiABJLChREZWNyZWFzZUNvdW50Q2xpZW50cxIXLmZpbHRlci5E",
+            "ZWNyZWFzZVJlcXVlc3QaGC5maWx0ZXIuRGVjcmVhc2VSZXNwb25zZSIAEksK",
+            "FEluY3JlYXNlQ291bnRDbGllbnRzEhcuZmlsdGVyLkluY3JlYXNlUmVxdWVz",
+            "dBoYLmZpbHRlci5JbmNyZWFzZVJlc3BvbnNlIgBiBnByb3RvMw=="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Filter.ConnectRequest), global::Filter.ConnectRequest.Parser, new[]{ "FilterPort" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Filter.ConnectResponse), global::Filter.ConnectResponse.Parser, null, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Filter.Image), global::Filter.Image.Parser, new[]{ "Image_", "Type" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Filter.ConnectResponse), global::Filter.ConnectResponse.Parser, new[]{ "Error" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Filter.Image), global::Filter.Image.Parser, new[]{ "Image_", "Type", "Kernel" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Filter.ImageResponse), global::Filter.ImageResponse.Parser, new[]{ "Success", "FilterImage" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Filter.DecreaseRequest), global::Filter.DecreaseRequest.Parser, null, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Filter.DecreaseResponse), global::Filter.DecreaseResponse.Parser, null, null, null, null, null),
@@ -280,6 +280,7 @@ namespace Filter {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ConnectResponse(ConnectResponse other) : this() {
+      error_ = other.error_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -287,6 +288,18 @@ namespace Filter {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public ConnectResponse Clone() {
       return new ConnectResponse(this);
+    }
+
+    /// <summary>Field number for the "error" field.</summary>
+    public const int ErrorFieldNumber = 1;
+    private long error_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long Error {
+      get { return error_; }
+      set {
+        error_ = value;
+      }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -304,6 +317,7 @@ namespace Filter {
       if (ReferenceEquals(other, this)) {
         return true;
       }
+      if (Error != other.Error) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -311,6 +325,7 @@ namespace Filter {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override int GetHashCode() {
       int hash = 1;
+      if (Error != 0L) hash ^= Error.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -329,6 +344,10 @@ namespace Filter {
     #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
       output.WriteRawMessage(this);
     #else
+      if (Error != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(Error);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -339,6 +358,10 @@ namespace Filter {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (Error != 0L) {
+        output.WriteRawTag(8);
+        output.WriteInt64(Error);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -349,6 +372,9 @@ namespace Filter {
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public int CalculateSize() {
       int size = 0;
+      if (Error != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Error);
+      }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
       }
@@ -360,6 +386,9 @@ namespace Filter {
     public void MergeFrom(ConnectResponse other) {
       if (other == null) {
         return;
+      }
+      if (other.Error != 0L) {
+        Error = other.Error;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -376,6 +405,10 @@ namespace Filter {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
             break;
+          case 8: {
+            Error = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -391,6 +424,10 @@ namespace Filter {
           default:
             _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
             break;
+          case 8: {
+            Error = input.ReadInt64();
+            break;
+          }
         }
       }
     }
@@ -434,6 +471,7 @@ namespace Filter {
     public Image(Image other) : this() {
       image_ = other.image_;
       type_ = other.type_;
+      kernel_ = other.kernel_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -467,6 +505,18 @@ namespace Filter {
       }
     }
 
+    /// <summary>Field number for the "kernel" field.</summary>
+    public const int KernelFieldNumber = 3;
+    private long kernel_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public long Kernel {
+      get { return kernel_; }
+      set {
+        kernel_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -484,6 +534,7 @@ namespace Filter {
       }
       if (Image_ != other.Image_) return false;
       if (Type != other.Type) return false;
+      if (Kernel != other.Kernel) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -493,6 +544,7 @@ namespace Filter {
       int hash = 1;
       if (Image_.Length != 0) hash ^= Image_.GetHashCode();
       if (Type != 0L) hash ^= Type.GetHashCode();
+      if (Kernel != 0L) hash ^= Kernel.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -519,6 +571,10 @@ namespace Filter {
         output.WriteRawTag(16);
         output.WriteInt64(Type);
       }
+      if (Kernel != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(Kernel);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -537,6 +593,10 @@ namespace Filter {
         output.WriteRawTag(16);
         output.WriteInt64(Type);
       }
+      if (Kernel != 0L) {
+        output.WriteRawTag(24);
+        output.WriteInt64(Kernel);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -552,6 +612,9 @@ namespace Filter {
       }
       if (Type != 0L) {
         size += 1 + pb::CodedOutputStream.ComputeInt64Size(Type);
+      }
+      if (Kernel != 0L) {
+        size += 1 + pb::CodedOutputStream.ComputeInt64Size(Kernel);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -570,6 +633,9 @@ namespace Filter {
       }
       if (other.Type != 0L) {
         Type = other.Type;
+      }
+      if (other.Kernel != 0L) {
+        Kernel = other.Kernel;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -594,6 +660,10 @@ namespace Filter {
             Type = input.ReadInt64();
             break;
           }
+          case 24: {
+            Kernel = input.ReadInt64();
+            break;
+          }
         }
       }
     #endif
@@ -615,6 +685,10 @@ namespace Filter {
           }
           case 16: {
             Type = input.ReadInt64();
+            break;
+          }
+          case 24: {
+            Kernel = input.ReadInt64();
             break;
           }
         }

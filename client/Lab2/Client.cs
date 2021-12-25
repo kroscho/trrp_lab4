@@ -77,10 +77,10 @@ namespace Client
            
         }
 
-        public System.Drawing.Bitmap SendgRPC(System.Drawing.Bitmap curImage, int fil, FilterService.FilterServiceClient client)
+        public System.Drawing.Bitmap SendgRPC(System.Drawing.Bitmap curImage, int fil, FilterService.FilterServiceClient client, int val)
         {
                 var data = imageToByteArray(curImage);
-                var reply = client.SendImage(new Filter.Image { Image_ = ByteString.CopyFrom(data), Type =fil });
+                var reply = client.SendImage(new Filter.Image { Image_ = ByteString.CopyFrom(data), Type =fil, Kernel=val });
                 Bitmap res=null;
 
                 using (var ms = new MemoryStream(reply.FilterImage.ToByteArray()))
