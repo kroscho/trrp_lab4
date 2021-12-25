@@ -23,12 +23,12 @@ sys.path.append(path_dir)
 import dispatcher_pb2_grpc
 import filter_pb2_grpc
 from dispatcher_pb2 import FilterServer, AddFilterServerResponse
-from filter_pb2 import ConnectRequest, IncreaseRequest, DecreaseRequest
+from filter_pb2 import ConnectRequest, IncreaseRequest
 
 class DispatcherService(dispatcher_pb2_grpc.DispatcherServiceServicer):
 
     def __init__(self):
-        self.filter_servers = ["192.168.0.100:62175"]
+        self.filter_servers = []
 
     def GetFilterServer(self, request, context):
         server_address = ""

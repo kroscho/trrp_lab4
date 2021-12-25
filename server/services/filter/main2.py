@@ -1,5 +1,4 @@
 from concurrent import futures
-from logging import error
 import grpc
 import sys, os
 import cv2
@@ -10,6 +9,7 @@ import matplotlib.pyplot as plt
 path_dir = (os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 sys.path.append(path_dir)
 
+from services.filter.serviceFilter import FilterImage
 from config import config
 from errors.typeErrors import TypeError
 
@@ -40,16 +40,16 @@ class FilterService(filter_pb2_grpc.FilterServiceServicer):
     def SendImage(self, request, context):
         img_bytes = request.image
         type_filter = request.type
-        #imageFilter = FilterImage(img_bytes, type_filter)
-        #result_image = imageFilter.applyFilter()
-
+        imageFilter = FilterImage(img_bytes, type_filter)
+        result_image = imageFilter.applyFilter()
+        '''
         nparr = np.frombuffer(img_bytes, np.uint8)
         img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
         img = cv2.cvtColor(img, cv2.COLOR_BGR2HSV) # convert to HSV
         figure_size = 9 # the dimension of the x and y axis of the kernal.
         new_image = cv2.blur(img ,(figure_size, figure_size))
         result_image = cv2.imencode('.jpg', new_image)[1].tobytes()
-
+        '''
         result = {'success': True, "filter_image": result_image}
         return ImageResponse(**result)
 
