@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+package filter;
+
+// проверка доступности сервера
+message ConnectRequest {
+    int64 filterPort = 1;
+}
+message ConnectResponse {}
+
+message Image{
+    bytes image = 1;
+}
+message ImageResponse{
+    bool success = 1;
+    bytes filter_image = 2;
+}
+
+// уменьшение кол-ва клиентов на этом сервере
+message DecreaseRequest {}
+message DecreaseResponse {}
+
+// увеличение кол-ва клиентов на этом сервере
+message IncreaseRequest {}
+message IncreaseResponse {}
+
+// сервис по работе с сервером обработки
+service FilterService {
+    rpc SendImage(Image) returns (ImageResponse) {}
+    rpc Connect(ConnectRequest) returns (ConnectResponse) {}
+    rpc DecreaseCountClients(DecreaseRequest) returns (DecreaseResponse) {}
+    rpc IncreaseCountClients(IncreaseRequest) returns (IncreaseResponse) {}
+}

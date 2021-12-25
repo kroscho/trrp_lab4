@@ -1,0 +1,258 @@
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\Lab2.exe
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Data.SQLite.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\Server.exe
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\Lab2.exe.config
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\Lab2.pdb
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\RabbitMQ.Client.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Text.Json.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Threading.Channels.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.ValueTuple.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\RabbitMQ.Client.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\Server.pdb
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Data.SQLite.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Text.Json.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Threading.Channels.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\bin\Debug\System.ValueTuple.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\obj\Debug\Client.MainForm.resources
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\obj\Debug\Lab2.Properties.Resources.resources
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\obj\Debug\Lab2.exe
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\Lab2\obj\Debug\Lab2.pdb
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Lab2.exe
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Server.exe
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Data.SQLite.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Google.Protobuf.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Grpc.Core.Api.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Grpc.Core.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\libgrpc_csharp_ext.x64.dylib
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Lab2.exe.config
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Lab2.pdb
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\MySql.Data.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\RabbitMQ.Client.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Text.Json.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Threading.Channels.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.ValueTuple.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\ZstdNet.dll
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Google.Protobuf.pdb
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Google.Protobuf.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Grpc.Core.pdb
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Grpc.Core.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Grpc.Core.Api.pdb
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Grpc.Core.Api.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\MySql.Data.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\RabbitMQ.Client.pdb
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\RabbitMQ.Client.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Server.pdb
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\Server.exe.config
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Data.SQLite.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Text.Json.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Threading.Channels.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Desktop\Lab2\Lab2\bin\Debug\System.ValueTuple.xml
+C:\Users\User\Desktop\Lab2\Lab2\obj\Debug\Client.MainForm.resources
+C:\Users\User\Desktop\Lab2\Lab2\obj\Debug\Lab2.Properties.Resources.resources
+C:\Users\User\Desktop\Lab2\Lab2\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Lab2\Lab2\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Lab2\Lab2\obj\Debug\Lab2.exe
+C:\Users\User\Desktop\Lab2\Lab2\obj\Debug\Lab2.pdb
+C:\Users\User\Desktop\Lab2\Lab2\obj\Debug\Client.csproj.CopyComplete
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\libgrpc_csharp_ext.x64.dylib
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Lab2.exe.config
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Lab2.exe
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Lab2.pdb
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Google.Protobuf.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Grpc.Core.Api.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Grpc.Core.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\MySql.Data.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\RabbitMQ.Client.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Server.exe
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Data.SQLite.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Text.Json.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Threading.Channels.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.ValueTuple.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\ZstdNet.dll
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Google.Protobuf.pdb
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Google.Protobuf.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Grpc.Core.pdb
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Grpc.Core.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Grpc.Core.Api.pdb
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Grpc.Core.Api.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\MySql.Data.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\RabbitMQ.Client.pdb
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\RabbitMQ.Client.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Server.pdb
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\Server.exe.config
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Data.SQLite.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Text.Json.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Threading.Channels.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\bin\Debug\System.ValueTuple.xml
+C:\Users\User\Desktop\Lab2 — копия\Lab2\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Lab2 — копия\Lab2\obj\Debug\Client.MainForm.resources
+C:\Users\User\Desktop\Lab2 — копия\Lab2\obj\Debug\Lab2.Properties.Resources.resources
+C:\Users\User\Desktop\Lab2 — копия\Lab2\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Lab2 — копия\Lab2\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Lab2 — копия\Lab2\obj\Debug\Lab2.exe
+C:\Users\User\Desktop\Lab2 — копия\Lab2\obj\Debug\Lab2.pdb
+C:\Users\User\Desktop\Lab2 — копия\Lab2\obj\Debug\Client.csproj.CopyComplete
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\libgrpc_csharp_ext.x64.dylib
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Lab2.exe.config
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Lab2.exe
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Lab2.pdb
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\EntityFramework.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Google.Protobuf.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Grpc.Core.Api.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Grpc.Core.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\MySql.Data.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\RabbitMQ.Client.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Server.exe
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Data.SQLite.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Text.Json.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Threading.Channels.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.ValueTuple.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\ZstdNet.dll
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\EntityFramework.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Google.Protobuf.pdb
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Google.Protobuf.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Grpc.Core.pdb
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Grpc.Core.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Grpc.Core.Api.pdb
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Grpc.Core.Api.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Microsoft.Diagnostics.Tracing.EventSource.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\MySql.Data.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\RabbitMQ.Client.pdb
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\RabbitMQ.Client.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Server.pdb
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\Server.exe.config
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Data.SQLite.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Text.Json.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Threading.Channels.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\bin\Debug\System.ValueTuple.xml
+C:\Users\User\Desktop\Lab4.1\Lab2\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Lab4.1\Lab2\obj\Debug\Client.MainForm.resources
+C:\Users\User\Desktop\Lab4.1\Lab2\obj\Debug\Lab2.Properties.Resources.resources
+C:\Users\User\Desktop\Lab4.1\Lab2\obj\Debug\Client.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Lab4.1\Lab2\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Lab4.1\Lab2\obj\Debug\Lab2.exe
+C:\Users\User\Desktop\Lab4.1\Lab2\obj\Debug\Lab2.pdb
