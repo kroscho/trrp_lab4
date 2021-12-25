@@ -16,7 +16,10 @@ class FilterImage():
 
     def getImageFromBytes(self, image_bytes):
         nparr = np.frombuffer(image_bytes, np.uint8)
-        img = cv2.imdecode(nparr, cv2.IMREAD_GRAYSCALE)
+        if self.typeFilter == TypeFilter.Gray.value:
+            img = cv2.imdecode(nparr, cv2.IMREAD_GRAYSCALE)
+        else:
+            img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
         return img
 
     def applyFilter(self):
