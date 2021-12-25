@@ -40,7 +40,8 @@ class FilterService(filter_pb2_grpc.FilterServiceServicer):
     def SendImage(self, request, context):
         img_bytes = request.image
         type_filter = request.type
-        imageFilter = FilterImage(img_bytes, type_filter)
+        figure_size = request.kernel
+        imageFilter = FilterImage(img_bytes, type_filter, figure_size)
         result_image = imageFilter.applyFilter()
         result = {'success': True, "filter_image": result_image}
         return ImageResponse(**result)

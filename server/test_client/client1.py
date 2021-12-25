@@ -47,16 +47,17 @@ def client():
     print(type(image))
     img_bytes = cv2.imencode('.jpg', image)[1].tobytes()
     try:
-        response = filter_stub.SendImage(Image(image=img_bytes, type=2))
+        response = filter_stub.SendImage(Image(image=img_bytes, type=3, kernel=230))
     except:
         print("На стороне сервера произошел сбой. Повторите попытку.")
+        filter_stub.DecreaseCountClients(DecreaseRequest())
         return
     print("Изображение успешно обработалось: ", response.success)
 
     filter_img = response.filter_image
     nparr = np.frombuffer(filter_img, np.uint8)
     filter_img = cv2.imdecode(nparr, 1)
-    cv2.imwrite('images/img-2.png', filter_img)
+    cv2.imwrite('images/img-3.png', filter_img)
     filter_stub.DecreaseCountClients(DecreaseRequest())
 
 
