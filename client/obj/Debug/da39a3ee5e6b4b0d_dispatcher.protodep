@@ -1,2 +1,0 @@
-obj\Debug/Dispatcher.cs \
-obj\Debug/DispatcherGrpc.cs: dispatcher.proto
