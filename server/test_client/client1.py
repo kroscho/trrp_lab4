@@ -23,7 +23,7 @@ import filter_pb2_grpc
 def client():
 
     # диспетчер серверов
-    channel = grpc.insecure_channel("192.168.43.180:50052")
+    channel = grpc.insecure_channel("192.168.0.100:50052")
     dispatcher_stub = dispatcher_pb2_grpc.DispatcherServiceStub(channel)
 
     # получаем сервер для работы с изображением
@@ -41,9 +41,9 @@ def client():
     channel = grpc.insecure_channel(filter_server.address)
     filter_stub = filter_pb2_grpc.FilterServiceStub(channel)
     print("Подключились к серверу.")
-    time.sleep(10)
+   # time.sleep(10)
 
-    image = cv2.imread('1.jpg')
+    image = cv2.imread('2.jpg')
     print(type(image))
     img_bytes = cv2.imencode('.jpg', image)[1].tobytes()
     try:
@@ -55,7 +55,7 @@ def client():
 
     filter_img = response.filter_image
     nparr = np.frombuffer(filter_img, np.uint8)
-    filter_img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
+    filter_img = cv2.imdecode(nparr, 1)
     cv2.imwrite('images/img-2.png', filter_img)
     filter_stub.DecreaseCountClients(DecreaseRequest())
 

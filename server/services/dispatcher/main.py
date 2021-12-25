@@ -4,20 +4,12 @@ import sys, os
 import time
 
 path_dir = (os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
-print(path_dir)
 sys.path.append(path_dir)
 
 from config import config
 from errors.typeErrors import TypeError
 
-path_dir = (os.path.abspath(os.path.join(os.path.dirname(__file__), '../filter')))
-print(path_dir)
-sys.path.append(path_dir)
-
-import main as serve_filter
-
 path_dir = (os.path.abspath(os.path.join(os.path.dirname(__file__), '../../grpc_stubs')))
-print(path_dir)
 sys.path.append(path_dir)
 
 import dispatcher_pb2_grpc

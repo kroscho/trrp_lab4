@@ -19,22 +19,21 @@ class FilterImage():
 
 
     def applyFilter(self):
-        if self.typeFilter == TypeFilter.Mean:
+        if self.typeFilter == TypeFilter.Mean.value:
             return self.meanFilter()
-        elif self.typeFilter == TypeFilter.Gauss:
+        elif self.typeFilter == TypeFilter.Gauss.value:
             return self.gaussFilter()
         return self.meanFilter()
 
     def meanFilter(self):
-        img = cv2.cvtColor(self.image, cv2.COLOR_BGR2HSV) # convert to HSV
         figure_size = 9 # the dimension of the x and y axis of the kernal.
-        new_image = cv2.blur(img ,(figure_size, figure_size))
+        new_image = cv2.blur(self.image ,(figure_size, figure_size))
         result_image = cv2.imencode('.jpg', new_image)[1].tobytes()
         return result_image
 
     def gaussFilter(self):
-        img = cv2.cvtColor(self.image, cv2.COLOR_BGR2HSV) # convert to HSV
         figure_size = 9 # the dimension of the x and y axis of the kernal.
-        new_image = cv2.GaussianBlur(img, (figure_size, figure_size),0)
+        new_image = cv2.GaussianBlur(self.image, (figure_size, figure_size), cv2.BORDER_DEFAULT)
+        cv2.imwrite('img-2.png', new_image)
         result_image = cv2.imencode('.jpg', new_image)[1].tobytes()
         return result_image
