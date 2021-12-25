@@ -1,0 +1,138 @@
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\libgrpc_csharp_ext.x64.dylib
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\ServergRPC.exe.config
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\ServergRPC.exe
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\ServergRPC.pdb
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\Google.Protobuf.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\Grpc.Core.Api.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\Grpc.Core.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\Google.Protobuf.pdb
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\Google.Protobuf.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\Grpc.Core.pdb
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\Grpc.Core.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\Grpc.Core.Api.pdb
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\Grpc.Core.Api.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\obj\Debug\ServergRPC.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\obj\Debug\ServergRPC.exe
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\obj\Debug\ServergRPC.pdb
+C:\Users\User\Desktop\Учёба 4й курс\ТРРП\Lab2\ServergRPC\obj\Debug\ServergRPC.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\libgrpc_csharp_ext.x64.dylib
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\ServergRPC.exe.config
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\ServergRPC.exe
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\ServergRPC.pdb
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Google.Protobuf.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Grpc.Core.Api.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Grpc.Core.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Google.Protobuf.pdb
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Google.Protobuf.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Grpc.Core.pdb
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Grpc.Core.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Grpc.Core.Api.pdb
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Grpc.Core.Api.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\obj\Debug\ServergRPC.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Lab2\ServergRPC\obj\Debug\ServergRPC.exe
+C:\Users\User\Desktop\Lab2\ServergRPC\obj\Debug\ServergRPC.pdb
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Server.exe
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Server.pdb
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Security.AccessControl.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Security.Permissions.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Security.AccessControl.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Security.Permissions.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\MySql.Data.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\ZstdNet.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Server.exe.config
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\MySql.Data.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\User\Desktop\Lab2\ServergRPC\obj\Debug\ServergRPC.exe.config
+C:\Users\User\Desktop\Lab2\ServergRPC\obj\Debug\ServergRPC.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Lab2 — копия\ServergRPC\obj\Debug\ServergRPC.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Lab2 — копия\ServergRPC\obj\Debug\ServergRPC.exe.config
+C:\Users\User\Desktop\Lab2 — копия\ServergRPC\obj\Debug\ServergRPC.exe
+C:\Users\User\Desktop\Lab2 — копия\ServergRPC\obj\Debug\ServergRPC.pdb
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\grpc_csharp_ext.x86.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\grpc_csharp_ext.x64.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\libgrpc_csharp_ext.x64.so
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\libgrpc_csharp_ext.x64.dylib
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\ServergRPC.exe.config
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\ServergRPC.exe
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\ServergRPC.pdb
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Google.Protobuf.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Grpc.Core.Api.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Grpc.Core.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Server.exe
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Buffers.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Memory.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Security.AccessControl.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Security.Permissions.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\MySql.Data.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\ZstdNet.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Google.Protobuf.pdb
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Google.Protobuf.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Grpc.Core.pdb
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Grpc.Core.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Grpc.Core.Api.pdb
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Grpc.Core.Api.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Server.pdb
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Server.exe.config
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Buffers.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Memory.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Security.AccessControl.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Security.Permissions.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\MySql.Data.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\User\Desktop\Lab4.1\ServergRPC\obj\Debug\ServergRPC.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Lab4.1\ServergRPC\obj\Debug\ServergRPC.exe.config
+C:\Users\User\Desktop\Lab4.1\ServergRPC\obj\Debug\ServergRPC.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Lab4.1\ServergRPC\obj\Debug\ServergRPC.exe
+C:\Users\User\Desktop\Lab4.1\ServergRPC\obj\Debug\ServergRPC.pdb
