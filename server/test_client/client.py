@@ -23,7 +23,7 @@ import filter_pb2_grpc
 def client():
 
     # диспетчер серверов
-    channel = grpc.insecure_channel("192.168.0.100:50052")
+    channel = grpc.insecure_channel("192.168.0.103:50052")
     dispatcher_stub = dispatcher_pb2_grpc.DispatcherServiceStub(channel)
 
     # получаем сервер для работы с изображением

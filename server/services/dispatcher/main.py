@@ -49,7 +49,7 @@ class DispatcherService(dispatcher_pb2_grpc.DispatcherServiceServicer):
                     file = open(self.path)
                     with open("servers.txt", "w") as file:
                         for address in self.filter_servers:
-                            file.write(address)
+                            file.write(address + "\n")
                     server_address = ""
                     if not self.filter_servers:
                         return FilterServer(address=server_address, error=TypeError.NotFoundServers.value)
@@ -67,7 +67,7 @@ class DispatcherService(dispatcher_pb2_grpc.DispatcherServiceServicer):
 
     def AddFilterServer(self, request, context):
         self.filter_servers.append(request.filterServer.address)
-        file = open(self.path, 'w')
+        file = open(self.path, 'a')
         file.write(request.filterServer.address + "\n")
         return AddFilterServerResponse()
 
