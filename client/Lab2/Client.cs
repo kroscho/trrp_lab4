@@ -52,17 +52,16 @@ namespace Client
                         MessageBox.Show("Серверы не найдены. Попробуйте подключиться позже.");
                         return null;
                     case 2:
-                        MessageBox.Show("");
-                        return null;
-                    case 3:
                         MessageBox.Show("Сервер переполнен.");
                         return null;
-                    case 4:
+                    case 3:
+                       
                         MessageBox.Show("Сервер не найден.");
                         return null;
-                    case 5:
+                    case 4:
                         MessageBox.Show("Время ожидания вышло. Пока все серверы переполнены. Попробуйте подключиться позже.");
                         return null;
+         
                     
                 }
                 MessageBox.Show("Неизвестная ошибка");

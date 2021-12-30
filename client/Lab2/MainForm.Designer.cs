@@ -132,6 +132,7 @@ namespace Client
             // 
             // butConServ
             // 
+            this.butConServ.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.butConServ.Location = new System.Drawing.Point(386, 225);
             this.butConServ.Name = "butConServ";
             this.butConServ.Size = new System.Drawing.Size(274, 160);
@@ -214,6 +215,7 @@ namespace Client
             this.Name = "MainForm";
             this.Text = "Клиент";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainForm_FormClosed);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
