@@ -16,7 +16,7 @@ print(path_dir)
 sys.path.append(path_dir)
 
 from dispatcher_pb2 import FilterServerRequest
-from filter_pb2 import Image
+from filter_pb2 import Image, DecreaseRequest
 import dispatcher_pb2_grpc
 import filter_pb2_grpc
 
@@ -40,17 +40,25 @@ def client():
 
     channel = grpc.insecure_channel(filter_server.address)
     filter_stub = filter_pb2_grpc.FilterServiceStub(channel)
-    
-    image = cv2.imread('1.jpg')
+    print("Подключились к серверу.")
+   # time.sleep(10)
+
+    image = cv2.imread('2.jpg')
     print(type(image))
     img_bytes = cv2.imencode('.jpg', image)[1].tobytes()
-    response = filter_stub.SendImage(Image(image=img_bytes, type=2))
+    try:
+        response = filter_stub.SendImage(Image(image=img_bytes, type=3, kernel=230))
+    except:
+        print("На стороне сервера произошел сбой. Повторите попытку.")
+        filter_stub.DecreaseCountClients(DecreaseRequest())
+        return
     print("Изображение успешно обработалось: ", response.success)
 
     filter_img = response.filter_image
     nparr = np.frombuffer(filter_img, np.uint8)
-    filter_img = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
-    cv2.imwrite('images/img-2.png', filter_img)
+    filter_img = cv2.imdecode(nparr, 1)
+    cv2.imwrite('images/img-3.png', filter_img)
+    filter_stub.DecreaseCountClients(DecreaseRequest())
 
 
 if __name__ == "__main__":

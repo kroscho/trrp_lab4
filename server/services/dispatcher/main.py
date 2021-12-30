@@ -20,7 +20,12 @@ from filter_pb2 import ConnectRequest, IncreaseRequest
 class DispatcherService(dispatcher_pb2_grpc.DispatcherServiceServicer):
 
     def __init__(self):
+        self.path = "servers.txt"
         self.filter_servers = []
+
+        file = open(self.path)
+        for address in file:
+            self.filter_servers.append(address.replace('\n', ""))
 
     def GetFilterServer(self, request, context):
         server_address = ""
@@ -38,22 +43,32 @@ class DispatcherService(dispatcher_pb2_grpc.DispatcherServiceServicer):
                 try:
                     response = stub.Connect(ConnectRequest(filterPort=0))
                 except:
+                    # если получили ошибку при подключении к серверу, значит его уже нет
+                    # убираем его из списка серверов, подкдюченных к диспетчеру, также убираем его из файла
                     self.filter_servers.remove(server_addr)
+                    file = open(self.path)
+                    with open("servers.txt", "w") as file:
+                        for address in self.filter_servers:
+                            file.write(address)
                     server_address = ""
                     if not self.filter_servers:
                         return FilterServer(address=server_address, error=TypeError.NotFoundServers.value)
+                    continue
+                if response.error == TypeError.ServerFull.value:
                     continue
                 if response.error == TypeError.Success.value:
                     stub.IncreaseCountClients(IncreaseRequest())
                     break
                 else:
                     server_address = ""
-                if (time.time() - start_time > 30):
+                if (time.time() - start_time > config['time_waiting']):
                     return FilterServer(address=server_address, error=TypeError.WaitingTime.value)            
         return FilterServer(address=server_address, error=TypeError.Success.value)
 
     def AddFilterServer(self, request, context):
         self.filter_servers.append(request.filterServer.address)
+        file = open(self.path, 'w')
+        file.write(request.filterServer.address + "\n")
         return AddFilterServerResponse()
 
 def serve():

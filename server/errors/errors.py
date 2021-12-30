@@ -7,7 +7,7 @@ def getMessageError(typeError):
         return "Серверы не найдены. Попробуйте подключиться позже."
     if typeError is TypeError.ServerFull.value:
         return "Сервер переполнен."
-    if typeError is TypeError.ServerFull.value:
+    if typeError is TypeError.NotFoundServer.value:
         return "Сервер не найден."
     if typeError is TypeError.WaitingTime.value:
         return "Время ожидания вышло. Пока все серверы переполнены. Попробуйте подключиться позже."
