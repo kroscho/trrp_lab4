@@ -32,6 +32,7 @@ namespace Client
                 pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
                 pictureBox1.Image = new Bitmap(openFile.FileName);
                 curImage = new Bitmap(pictureBox1.Image);
+                OpenPicture();
             }
         }
 
@@ -44,18 +45,69 @@ namespace Client
         {
             if (rBF1.Checked)
             {
-                resImage= client.SendgRPC(new Bitmap(pictureBox1.Image), 1, conn, int.Parse(numericUpDown1.Text));
-                pictureBox1.Image = resImage;
+                try
+                {
+                    resImage = client.SendgRPC(new Bitmap(pictureBox1.Image), 1, conn, int.Parse(numericUpDown1.Text));
+                    pictureBox1.Image = resImage;
+                }
+                catch 
+                {
+                    WrongConn();
+                }
             }
             else if(rBF2.Checked)
-            {   resImage= client.SendgRPC(new Bitmap(pictureBox1.Image), 2, conn, int.Parse(numericUpDown1.Text));
-                pictureBox1.Image = resImage;
+            {
+                try 
+                {
+                     resImage = client.SendgRPC(new Bitmap(pictureBox1.Image), 2, conn, int.Parse(numericUpDown1.Text));
+                        pictureBox1.Image = resImage;
+                    }
+                    catch
+                {
+                    WrongConn();
+                }
             }
             else
             {
-                resImage = client.SendgRPC(new Bitmap(pictureBox1.Image), 3, conn, int.Parse(numericUpDown1.Text));
-                pictureBox1.Image = resImage;
+                try
+                {
+                    resImage = client.SendgRPC(new Bitmap(pictureBox1.Image), 3, conn, int.Parse(numericUpDown1.Text));
+                    pictureBox1.Image = resImage;
+                }
+                catch
+                {
+                    WrongConn();
+                }
             }
+        }
+
+        private void WrongConn()
+        {
+            MessageBox.Show("Ошибка на стороне сервера");
+            butConServ.Visible = true;
+            pictureBox1.Visible = false;
+            label1.Visible = false;
+            tbFilePath.Visible = false;
+            butOpenFile.Visible = false;
+            rBF1.Visible = false;
+            rBF2.Visible = false;
+            butFilter.Visible = false;
+            butDef.Visible = false;
+            butSave.Visible = false;
+            numericUpDown1.Visible = false;
+            rBF3.Visible = false;
+        }
+
+        private void OpenPicture()
+        {
+            rBF1.Visible = true;
+            rBF2.Visible = true;
+            butFilter.Visible = true;
+            butDef.Visible = true;
+            butSave.Visible = true;
+            numericUpDown1.Visible = true;
+            rBF3.Visible = true;
+           
         }
 
         private void successConn()
@@ -65,13 +117,14 @@ namespace Client
             label1.Visible = true;
             tbFilePath.Visible = true;
             butOpenFile.Visible = true;
-            rBF1.Visible = true;
-            rBF2.Visible = true;
-            butFilter.Visible = true;
-            butDef.Visible = true;
-            butSave.Visible = true;
-            numericUpDown1.Visible = true;
-            rBF3.Visible = true;
+            pictureBox1.Image = null;
+            tbFilePath.Text = null;
+
+            if (rBF1.Checked || rBF2.Checked)
+                numericUpDown1.Value = 1;
+            else
+                numericUpDown1.Value = 0;
+
         }
         private void butConServ_Click(object sender, EventArgs e)
         {
@@ -92,8 +145,15 @@ namespace Client
 
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
-            if(conn!=null)
-            conn.DecreaseCountClients(new DecreaseRequest());
+            try
+            {  if (conn != null)
+                {
+                    conn.DecreaseCountClients(new DecreaseRequest());
+                    MessageBox.Show("Отключено от сервера");
+                }
+            }
+            catch
+            { }
         }
 
         private void butSave_Click(object sender, EventArgs e)
@@ -132,6 +192,11 @@ namespace Client
             numericUpDown1.Value = 1;
             numericUpDown1.Minimum = 1;
             numericUpDown1.ReadOnly = true;
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
