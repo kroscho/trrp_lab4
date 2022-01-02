@@ -23,11 +23,18 @@ class DispatcherService(dispatcher_pb2_grpc.DispatcherServiceServicer):
         self.path = "servers.txt"
         self.filter_servers = []
 
+        self.getServers()
+
+    def getServers(self):
         file = open(self.path)
+        self.filter_servers = []
         for address in file:
+            print("addrADD: ", address.replace('\n', ''))
             self.filter_servers.append(address.replace('\n', ""))
+        file.close()
 
     def GetFilterServer(self, request, context):
+        self.getServers()
         server_address = ""
         start_time = time.time()
         while server_address == "":
@@ -45,11 +52,13 @@ class DispatcherService(dispatcher_pb2_grpc.DispatcherServiceServicer):
                 except:
                     # если получили ошибку при подключении к серверу, значит его уже нет
                     # убираем его из списка серверов, подкдюченных к диспетчеру, также убираем его из файла
+                    print("Сервер по адресу ", server_addr, " не существует")
                     self.filter_servers.remove(server_addr)
                     file = open(self.path)
                     with open("servers.txt", "w") as file:
                         for address in self.filter_servers:
                             file.write(address + "\n")
+                    file.close()
                     server_address = ""
                     if not self.filter_servers:
                         return FilterServer(address=server_address, error=TypeError.NotFoundServers.value)

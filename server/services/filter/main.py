@@ -54,6 +54,11 @@ class FilterService(filter_pb2_grpc.FilterServiceServicer):
         self.count_clients -= 1
         return DecreaseResponse()
 
+def writeAddress(host, port):
+    file = open("../dispatcher/servers.txt", 'a')
+   # file = open("server/services/dispatcher/servers.txt", 'a')
+    file.write(str(host) + ':' + str(port) + "\n")
+    file.close()
 
 def serve():
     server = grpc.server(futures.ThreadPoolExecutor(max_workers=10))
@@ -62,15 +67,19 @@ def serve():
     # автоматический выбор порта
     port = server.add_insecure_port(config['filter_address'])
 
-    channel = grpc.insecure_channel(config['dispatcher_address'])
-    stub = dispatcher_pb2_grpc.DispatcherServiceStub(channel)
+    #channel = grpc.insecure_channel(config['dispatcher_address'])
+    #stub = dispatcher_pb2_grpc.DispatcherServiceStub(channel)
+    
     host, _ = config['filter_address'].split(':')
-    print("host: ", host, "   port: ", port)
-    stub.AddFilterServer(AddFilterServerRequest(filterServer = FilterServer(address=f"{host}:{port}")))
-    print('Сервер подключился к диспетчеру')
-
+    writeAddress(host, port)
+    #file = open("../dispatcher/servers.txt", 'a')
+    #file.write(str(host) + ':' + str(port) + "\n")
+    
+    #stub.AddFilterServer(AddFilterServerRequest(filterServer = FilterServer(address=f"{host}:{port}")))
+    #print('Сервер подключился к диспетчеру')
+    
     server.start()
-    print("Сервер обработки стартовал на {}".format(config['filter_address'].split(':')[0] + ':' + str(port)))
+    print("Сервер обработки стартовал на {}".format(str(host) + ':' + str(port)))
     server.wait_for_termination()
 
 if __name__ == "__main__":
