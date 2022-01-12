@@ -1,7 +1,7 @@
 config = {
      # адреса серверов
-    'dispatcher_address': '192.168.0.103:50052',
-    'filter_address': '192.168.0.103:0',
+    'dispatcher_address': 'trrp.hopto.org:50052',
+    'filter_address': 'trrp.hopto.org:0',
 
     # максимальное кол-во клиентов на сервере
     'max_clients': 2,

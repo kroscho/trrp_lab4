@@ -307,8 +307,6 @@ C:\trrp_lab4\client\Lab2\bin\Debug\MySql.Data.xml
 C:\trrp_lab4\client\Lab2\bin\Debug\Newtonsoft.Json.xml
 C:\trrp_lab4\client\Lab2\bin\Debug\RabbitMQ.Client.pdb
 C:\trrp_lab4\client\Lab2\bin\Debug\RabbitMQ.Client.xml
-C:\trrp_lab4\client\Lab2\bin\Debug\Server.pdb
-C:\trrp_lab4\client\Lab2\bin\Debug\Server.exe.config
 C:\trrp_lab4\client\Lab2\bin\Debug\System.Buffers.xml
 C:\trrp_lab4\client\Lab2\bin\Debug\System.Data.SQLite.xml
 C:\trrp_lab4\client\Lab2\bin\Debug\System.Memory.xml
@@ -319,10 +317,11 @@ C:\trrp_lab4\client\Lab2\bin\Debug\System.Text.Json.xml
 C:\trrp_lab4\client\Lab2\bin\Debug\System.Threading.Channels.xml
 C:\trrp_lab4\client\Lab2\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\trrp_lab4\client\Lab2\bin\Debug\System.ValueTuple.xml
-C:\trrp_lab4\client\Lab2\obj\Debug\Client.csproj.AssemblyReference.cache
 C:\trrp_lab4\client\Lab2\obj\Debug\Client.MainForm.resources
 C:\trrp_lab4\client\Lab2\obj\Debug\Lab2.Properties.Resources.resources
 C:\trrp_lab4\client\Lab2\obj\Debug\Client.csproj.GenerateResource.cache
 C:\trrp_lab4\client\Lab2\obj\Debug\Client.csproj.CoreCompileInputs.cache
 C:\trrp_lab4\client\Lab2\obj\Debug\Lab2.exe
 C:\trrp_lab4\client\Lab2\obj\Debug\Lab2.pdb
+C:\trrp_lab4\client\Lab2\obj\Debug\Client.csproj.CopyComplete
+C:\trrp_lab4\client\Lab2\obj\Debug\Client.csproj.AssemblyReference.cache

@@ -63,13 +63,14 @@ class DispatcherService(dispatcher_pb2_grpc.DispatcherServiceServicer):
                     if not self.filter_servers:
                         return FilterServer(address=server_address, error=TypeError.NotFoundServers.value)
                     continue
-                if response.error == TypeError.ServerFull.value:
-                    continue
+                
+                
                 if response.error == TypeError.Success.value:
                     stub.IncreaseCountClients(IncreaseRequest())
                     break
-                else:
-                    server_address = ""
+                if response.error == TypeError.ServerFull.value:
+                    print('Переполнен')
+                    server_address=""
                 if (time.time() - start_time > config['time_waiting']):
                     return FilterServer(address=server_address, error=TypeError.WaitingTime.value)            
         return FilterServer(address=server_address, error=TypeError.Success.value)

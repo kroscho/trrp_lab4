@@ -41,6 +41,7 @@ namespace Client
                 Channel channel = new Channel(address + ":" + port, ChannelCredentials.Insecure);
                 var client = new DispatcherService.DispatcherServiceClient(channel);
                 var reply = client.GetFilterServer(new FilterServerRequest());
+                //MessageBox.Show(Convert.ToString(Convert.ToInt64(reply.Error)));
                 switch (Convert.ToInt64(reply.Error))
                 {
                     case 0:
@@ -55,7 +56,6 @@ namespace Client
                         MessageBox.Show("Сервер переполнен.");
                         return null;
                     case 3:
-                       
                         MessageBox.Show("Сервер не найден.");
                         return null;
                     case 4:

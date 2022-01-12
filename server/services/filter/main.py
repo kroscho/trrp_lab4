@@ -29,9 +29,7 @@ class FilterService(filter_pb2_grpc.FilterServiceServicer):
         self.count_clients = 0
 
     # проверка доступности сервера
-    def Connect(self, request, context):
-        print(TypeError.ServerFull.value)
-        
+    def Connect(self, request, context): 
         if self.count_clients + 1 > config['max_clients']:
             return ConnectResponse(error=TypeError.ServerFull.value)
    
